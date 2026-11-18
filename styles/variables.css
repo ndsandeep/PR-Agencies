@@ -1,0 +1,20 @@
+:root {
+  --ink: #080A16;
+  --surface: #0F1226;
+  --surface-2: #161A36;
+  --line: rgba(201, 206, 216, .14);
+  --paper: #F3F0E8;
+  --paper-ink: #0B0D1C;
+  --indigo: #4A3FE0;
+  --indigo-soft: #7C74FF;
+  --silver: #C9CED8;
+  --signal: #E9B44C;
+  --text: #EDEEF5;
+  --muted: #9AA0B8;
+  --font-head: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --r: 18px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --pad: clamp(20px, 5vw, 80px);
+  --grad: linear-gradient(120deg, var(--indigo), var(--indigo-soft) 50%, var(--silver));
+}

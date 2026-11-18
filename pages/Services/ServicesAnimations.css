@@ -1,0 +1,113 @@
+/* ==========================================================================
+   Services Page – Animation-specific CSS
+   File: src/pages/Services/ServicesAnimations.css
+   All class names prefixed with services- to avoid conflicts.
+   ========================================================================== */
+
+/* ---------- Variable font for TextPressure heading ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+/* ---------- Pressure heading ---------- */
+.services-pressure-wrap {
+  font-family: 'Big Shoulders Display', 'Space Grotesk', sans-serif;
+  font-size: clamp(52px, 8vw, 120px);
+  font-weight: 100;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.services-pressure-char {
+  display: inline-block;
+  will-change: font-variation-settings;
+}
+
+/* ---------- TextType Component Styles ---------- */
+.services-text-type {
+  display: inline-block;
+  min-height: 1.6em;
+}
+
+.services-text-type-cursor {
+  display: inline-block;
+  margin-left: 3px;
+  color: var(--indigo-soft);
+  font-weight: 600;
+  animation: services-cursor-blink 0.75s infinite ease-in-out;
+}
+
+@keyframes services-cursor-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ---------- Scroll-expand section ---------- */
+.services-approach-section {
+  transform-origin: center top;
+}
+
+/* ---------- Keyframes ---------- */
+@keyframes services-pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes services-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* ---------- Approach heading shimmer on hover ---------- */
+.services-approach-heading:hover .services-pressure-wrap {
+  background: linear-gradient(110deg, #C9CED8 25%, #ffffff 50%, #C9CED8 75%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: services-shimmer 2.2s linear infinite;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .services-pressure-char {
+    transition: none !important;
+    will-change: auto !important;
+  }
+
+  .services-approach-heading:hover .services-pressure-wrap {
+    animation: none;
+  }
+
+  .services-depth-card-img {
+    transition: none !important;
+  }
+
+  .services-text-type-cursor {
+    animation: none;
+  }
+
+  .services-fold-word {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .services-split-flap-tile.is-flipping .services-split-flap-card {
+    animation: none !important;
+  }
+}

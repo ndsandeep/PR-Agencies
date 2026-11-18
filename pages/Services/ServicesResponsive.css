@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Services Page – Responsive Styles
+   File: src/pages/Services/ServicesResponsive.css
+   All class names prefixed with services- to avoid conflicts.
+   ========================================================================== */
+
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .services-approach-heading {
+    margin-bottom: 40px;
+  }
+
+  .services-pressure-wrap {
+    font-size: clamp(42px, 7vw, 76px) !important;
+  }
+
+  .services-depth-stage {
+    height: 540px;
+    perspective: 1100px;
+  }
+
+  .services-depth-card {
+    width: 350px;
+    height: 520px;
+    margin-left: -175px;
+  }
+
+  .services-depth-card-media {
+    height: 220px;
+  }
+
+  .services-depth-card-body {
+    padding: 20px 22px 24px;
+  }
+
+  .services-depth-card-title {
+    font-size: 26px;
+  }
+}
+
+/* ---------- Mobile (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .services-approach-section {
+    padding: clamp(60px, 10vw, 90px) 0;
+  }
+
+  .services-pressure-wrap {
+    font-size: clamp(34px, 10vw, 56px) !important;
+    justify-content: center;
+  }
+
+  .services-approach-heading {
+    margin-bottom: 30px;
+  }
+
+  .services-approach-subtitle {
+    font-size: 18px;
+    margin-top: 16px;
+    line-height: 1.45;
+  }
+
+  .services-depth-stage {
+    height: 500px;
+    perspective: 900px;
+  }
+
+  .services-depth-card {
+    width: 300px;
+    height: 480px;
+    margin-left: -150px;
+  }
+
+  .services-depth-card-media {
+    height: 200px;
+  }
+
+  .services-depth-card-body {
+    padding: 18px 18px 22px;
+  }
+
+  .services-depth-card-title {
+    font-size: 22px;
+  }
+
+  .services-depth-card-desc {
+    font-size: 13.5px;
+    -webkit-line-clamp: 3;
+  }
+
+  .services-depth-controls {
+    margin-top: 24px;
+    gap: 12px;
+  }
+
+  .services-depth-arrow {
+    width: 42px;
+    height: 42px;
+  }
+
+  .services-depth-pagination {
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .services-depth-dot {
+    padding: 4px;
+  }
+
+  .services-depth-dot-pill {
+    width: 6px;
+    height: 6px;
+  }
+
+  .services-depth-dot.is-active .services-depth-dot-pill {
+    width: 22px;
+  }
+}
+
+/* ---------- Small mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .services-pressure-wrap {
+    font-size: clamp(28px, 11vw, 44px) !important;
+  }
+
+  .services-depth-stage {
+    height: 460px;
+  }
+
+  .services-depth-card {
+    width: min(270px, calc(100vw - 64px));
+    height: 440px;
+    margin-left: max(-135px, calc((64px - 100vw) / 2));
+  }
+
+  .services-depth-card-media {
+    height: 175px;
+  }
+
+  .services-depth-card-body {
+    padding: 14px 16px 18px;
+  }
+
+  .services-depth-card-title {
+    font-size: 20px;
+  }
+
+  .services-depth-card-tagline {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .services-depth-card-desc {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .services-depth-arrow {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+
+/* ---------- Receipt Card Responsive Styles ---------- */
+@media (max-width: 640px) {
+  .services-receipt-card {
+    padding: 28px 20px 0;
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+  .services-receipt-punch-row,
+  .services-receipt-tear {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .services-receipt-row {
+    font-size: 12.5px;
+  }
+  .services-receipt-value {
+    font-size: 11px;
+    margin-left: 8px;
+  }
+  .services-receipt-brand {
+    font-size: 24px;
+  }
+  .services-receipt-tagline {
+    font-size: 18px;
+  }
+}

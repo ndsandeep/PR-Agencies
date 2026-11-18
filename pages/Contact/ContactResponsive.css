@@ -1,0 +1,149 @@
+/* ==========================================================================
+   Contact Page – Responsive Styles
+   File: src/pages/Contact/ContactResponsive.css
+   All class names prefixed with contact- to avoid conflicts.
+   ========================================================================== */
+
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .contact-split {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .contact-info {
+    padding: 32px;
+  }
+
+  .contact-form-container {
+    padding: 32px;
+  }
+}
+
+/* ---------- Mobile (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .contact-page-section {
+    padding: clamp(50px, 8vw, 80px) 0;
+  }
+
+  .contact-form {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .contact-wrap,
+  .contact-split,
+  .contact-split > *,
+  .contact-form-container,
+  .contact-form {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-info {
+    padding: 24px;
+    gap: 28px;
+  }
+
+  .contact-form-container {
+    padding: 24px 20px;
+  }
+
+  .contact-info-value {
+    font-size: 19px;
+  }
+
+  .contact-floating-input {
+    font-size: 15px;
+    padding: 16px 14px 12px;
+  }
+
+  .contact-floating-label {
+    left: 14px;
+    font-size: 14px;
+  }
+
+  .contact-map {
+    aspect-ratio: 16 / 9;
+  }
+
+  .contact-form-submit {
+    padding: 16px 28px;
+  }
+
+  .contact-form-success {
+    padding: 28px 20px;
+  }
+
+  .contact-form-success-title {
+    font-size: 26px;
+  }
+}
+
+/* ---------- Small mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .contact-info {
+    padding: 20px 16px;
+    gap: 24px;
+  }
+
+  .contact-form-container {
+    padding: 20px 14px;
+  }
+
+  .contact-social-logo-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .contact-info-icon-badge {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+
+/* Contact Hero Decrypted Subtitle Responsive */
+@media (max-width: 768px) {
+  .contact-hero-decrypted-sub {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero-decrypted-sub {
+    font-size: 19px;
+  }
+}
+
+
+/* ---------- Let's Build Together Responsive ---------- */
+@media (max-width: 768px) {
+  .contact-build-together-section {
+    padding: clamp(60px, 9vw, 90px) 0;
+  }
+
+  .contact-build-title {
+    font-size: clamp(34px, 8.5vw, 48px);
+  }
+
+  .contact-build-lead {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .contact-build-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .contact-build-btn-primary,
+  .contact-build-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}

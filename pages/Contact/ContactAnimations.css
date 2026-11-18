@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Contact Page – Animation-specific CSS
+   File: src/pages/Contact/ContactAnimations.css
+   All class names prefixed with contact- to avoid conflicts.
+   ========================================================================== */
+
+@keyframes contact-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes contact-pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(74, 63, 224, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px rgba(124, 116, 255, 0.3);
+  }
+}
+
+.contact-info:hover {
+  border-color: rgba(124, 116, 255, 0.3);
+  transition: border-color 0.4s ease;
+}
+
+.contact-form-container:hover {
+  border-color: rgba(124, 116, 255, 0.3);
+  transition: border-color 0.4s ease;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .contact-form-spinner {
+    animation: none;
+  }
+  
+  .contact-social-link:hover {
+    transform: none;
+  }
+  
+  .contact-info-link:hover {
+    transform: none;
+  }
+}
